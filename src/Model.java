@@ -1,10 +1,10 @@
 public class Model 
 {
-	private String password;
+	private String password = "";
 	
-	public void setPassword(String pass)
+	public void setPassword(String password)
 	{
-		password = pass;
+		this.password = password;
 	}
 	
 	public String getPassword()

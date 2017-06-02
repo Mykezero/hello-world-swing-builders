@@ -1,21 +1,17 @@
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JTextField;
-
-import org.codehaus.janino.Java.LabeledStatement;
-import org.javabuilders.BuildResult;
 import org.javabuilders.swing.SwingJavaBuilder;
 
 public class Controller extends JFrame
 {
-	private BuildResult result;
+	private static final long serialVersionUID = -339810386438853857L;
 	private Model model;
 	private JLabel lblStatus;
 	
 	public Controller() 
 	{
 		model = new Model();
-		result = SwingJavaBuilder.build(this);
+		SwingJavaBuilder.build(this);		
 	}
 	
 	public Model getModel() 
