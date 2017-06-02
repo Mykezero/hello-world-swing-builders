@@ -1,8 +1,0 @@
-JFrame(name=frame, title=frame.title, size=packed, defaultCloseOperation=exitOnClose, background=white):
-  - JButton(name=login, text=button.login, onAction=[login])
-  - MigLayout: |
-      [pref]          [grow,100]
-      "status"        txtStatus
-      >login+*
-bind:
-  - txtStatus.text: model.password
